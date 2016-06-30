@@ -1,0 +1,9 @@
+*.o
+*.dbd
+*~
+db/*
+bin/*
+*/O.linux-arm/*
+*/*/O.linux-arm/*
+*envPaths
+

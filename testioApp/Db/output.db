@@ -1,0 +1,41 @@
+record(stringout, "$(Sys){DISP}OUT"){
+    field(DTYP, "devfile")
+    field(DESC, "$(Desc)")
+    field(SCAN, "Passive")
+    field(OUT, "@1") # Driver t√ pedindo um argumento :(
+    field(DOL, "$(Sys){DISP}CALC.SVAL PP")
+    field(OSML, "closed_loop")
+}
+
+record(scalcout, "$(Sys){DISP}CALC"){
+    field(SCAN, "Passive")
+    field(INPA, "$(Sys){ADC:1}IN.VAL PP")
+    field(CALC, "PRINTF(\"%03dC\", A)")
+    field(OOPT, "On Change")
+    field(DOPT, "Use CALC")
+    field(FLNK, "$(Sys){Temp-BBB}OUT.PROC")
+    field(OUT, "$(Sys){DISP}OUT.VAL")
+}
+
+record(calcout, "$(Sys){Temp-BBB}OUT"){
+    field(SCAN, "Passive")
+    field(EGU, "C")
+    field(PREC, "1")
+    field(HOPR, "50")
+    field(LOPR, "0")
+    field(HIHI, "36")
+    field(HIGH, "32")
+    field(LOW, "12")
+    field(LOLO, "8")
+    field(HHSV, "MAJOR")
+    field(HSV, "MINOR")
+    field(LSV, "MINOR")
+    field(LLSV, "MAJOR")
+    field(HYST, "1")
+    field(FLNK, "$(Sys){DISP}OUT.PROC")
+    field(INPA, "$(Sys){ADC:1}IN.VAL PP")
+    field(CALC, "A/10")
+    field(OOPT, "On Change")
+    field(DOPT, "Use CALC")
+    field(FLNK, "$(Sys){DISP}OUT.PROC")
+}
