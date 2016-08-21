@@ -1,0 +1,12 @@
+record(bo, "$(Sys){Roku:$(Key)}OUT"){
+    field(DTYP, "devroku")
+    field(DESC, "teste roku play")
+    field(OUT, "@http://192.168.1.7:8060/keypress/$(Key)")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    field(ZSV, "NO_ALARM")
+    field(OSV, "NO_ALARM")
+    field(DOL, "0")
+    field(PINI, "NO")
+}
+

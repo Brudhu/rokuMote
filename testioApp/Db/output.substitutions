@@ -1,0 +1,5 @@
+file ../../db/output.db {
+    pattern     {Sys,           Key    }
+                {"BBB01",       "ONOFF" }
+}
+

@@ -1,0 +1,22 @@
+file ../../db/output-curl.db {
+    pattern	{Sys,	  	Key    }
+		{"BBB01",	"Home" }
+		{"BBB01",	"Rev" }
+		{"BBB01",	"Fwd" }
+		{"BBB01",	"Play" }
+		{"BBB01",	"Select" }
+		{"BBB01",	"Left" }
+		{"BBB01",	"Right" }
+		{"BBB01",	"Down" }
+		{"BBB01",	"Up" }
+		{"BBB01",	"Back" }
+		{"BBB01",	"InstantReplay" }
+		{"BBB01",	"Info" }
+		{"BBB01",	"Backspace" }
+		{"BBB01",	"Search" }
+		{"BBB01",	"Enter" }
+		{"BBB01",	"Power" }
+		{"BBB01",	"VolumeDown" }
+		{"BBB01",	"VolumeMute" }
+		{"BBB01",	"VolumeUp" }
+}

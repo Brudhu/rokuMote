@@ -1,0 +1,4 @@
+file ../../db/input.db {
+    pattern	{Sys,	  	Pin, 	Scan,		Desc}
+		{"BBB01",	"1",	"1 second"	"Adc 1 BeagleBone"}
+}

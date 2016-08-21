@@ -1,0 +1,9 @@
+record(ai, "$(Sys){ADC:$(Pin)}IN"){
+    field(DTYP, "devadc")
+    field(DESC, "$(Desc)")
+    field(LOPR, "0")
+    field(HOPR, "500")
+    field(INP, "@$(Pin)")
+    field(SCAN, "$(Scan)")
+    field(FLNK, "$(Sys){DISP}CALC.PROC")
+}
